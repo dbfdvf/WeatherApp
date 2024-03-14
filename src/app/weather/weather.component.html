@@ -1,0 +1,32 @@
+<div class="weatherCard">
+    <form #searchForm="ngForm" (ngSubmit)="searchCity()">
+
+        <div class="form-group">
+            <input type="text" id="city" name="city" class="cityInput" [(ngModel)]="city" required>
+        </div>
+        <button type="submit" class="submitButton">Search city</button>
+        <div *ngIf="!searchForm.controls['city'].valid && searchForm.controls['city'].touched" class="error">
+            City is required
+        </div>
+        <div *ngIf="cityError" class="error">{{ cityError }}</div>
+    </form>
+    <div class="container">
+        <div class="weatherTable">
+            <div class="infoCell">
+                <p>Weather: {{ weather}}</p>
+            </div>
+            <div class="infoCell">
+                <p>Temperature: {{temperature}}&#8451;</p>
+            </div>
+            <div class="infoCell">
+                <p>Humidity: {{humidity}}%</p>
+            </div>
+            <div class="infoCell">
+                <p>Pressure: {{pressure}}hPa</p>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

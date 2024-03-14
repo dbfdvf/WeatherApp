@@ -1,0 +1,69 @@
+
+.container{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+    height:50vh;
+    width:50vh;
+    background-color: #007F73;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 2vh;
+}
+.cityInput{
+    margin: 0 auto; 
+    margin-top: 30px;
+    display: block;
+    border-radius: 30px;
+    font-size: 22px;
+    padding: 20px;
+    border:none;
+    background-color:#4CCD99;
+}
+.cityInput:focus{
+    outline: none;
+}
+.submitButton{
+    padding: 15px;
+    font-size: 22px;
+    margin: 0 auto; 
+    display: block;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color:#4CCD99;
+    border: none;
+}
+.error{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.weatherTable{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4CCD99;
+    height: 47vh;
+    width: 47vh;
+    border-radius: 10px;
+}
+.infoCell{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    overflow: hidden; /* Ukrywa zawartość, która jest poza obszarem elementu */
+    overflow-wrap: break-word;
+}
+p{
+    padding: 40px;
+}
